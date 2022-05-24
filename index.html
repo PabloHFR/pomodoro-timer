@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="overlays.css">
-    <link rel="stylesheet" href="config.css">
-    <script src="app.js"></script>
-    <script src="config.js"></script>
-    <script src="pomodoro.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/overlays.css">
+    <link rel="stylesheet" href="/styles/config.css">
+    <script src="/scripts/app.js" defer></script>
+    <script src="/scripts/config.js" defer></script>
+    <script src="/scripts/pomodoro.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <a href="index.html" id="page-title">Pomodoro</a>
+        <nav>
+            <ul>
+                <li>
+                    <button class="header-btn" id="setting-btn">Settings</button>
+                </li>
+                <li>
+                    <button class="header-btn" id="login-btn">Login</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside id="configurations"></aside>
+        <section>
+            <article id="pomodoro-section">
+                <div id="options">
+                    <ul>
+                        <li>
+                            <button id="pomodoro-btn" class="opt-btn active">Pomodoro</button>
+                        </li>
+                        <li>
+                            <button id="short-break-btn" class="opt-btn">Short Break</button>
+                        </li>
+                        <li>
+                            <button id="long-break-btn" class="opt-btn">Long Break</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="timer">
+                    <h2 id="time">25:00</h2>
+                </div>
+                <div id="button-div">
+                    <button id="start-btn">Start</button>
+                </div>
+            </article>
+            <article id="rounds-section">
+                <p id="rounds">#1</p>
+                <p id="message">Time to Focus!</p>
+            </article>
+        </section>
+    </main>
+
 </body>
+
 </html>

@@ -1,0 +1,139 @@
+:root {
+    --pomodoroColor: rgb(217, 85, 80);
+    --shortBreakColor: rgb(76, 145, 149);
+    --longBreakColor: rgb(69, 124, 163);
+}
+
+body {
+    background-color: var(--pomodoroColor);
+    max-width: 39rem;
+    margin: 0 auto;
+    font-family: 'Varela Round', 'Roboto', sans-serif;
+}
+
+/* ****** Header Styles ****** */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 36px 0px;
+    padding: 0.80rem;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    margin-left: 1rem;
+}
+
+header a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header-btn {
+    font-family: inherit;
+    font-size: 13px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ****** Main Content ****** */
+
+/* Section Styles */
+#pomodoro-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 35rem;
+    margin: 0 25px 0 25px;
+    padding: 20px 0px 30px 0px;
+    border-radius: 8px;
+}
+
+#options ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#options ul li {
+    text-align: center;
+    margin-left: 1rem;
+}
+
+/* Options Buttons Styles */
+.opt-btn {
+    font-family: inherit;
+    font-size: 16px;
+    background-color: inherit;
+    color: white;
+    padding: 2px 12px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+}
+
+/* Timer Styles */
+
+#timer h2 {
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+/* Start Button Styles */
+
+#button-div {
+    text-align: center;
+}
+
+#start-btn {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--pomodoroColor);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 64px;
+    box-shadow: 0px 6px 0px rgb(235, 235, 235);
+}
+
+/* Rounds Section */
+
+#rounds-section {
+    text-align: center;
+    padding: 16px 0;
+}
+
+#rounds {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 6px 0;
+}
+
+#message {
+    color: white;
+    margin: 6px 0;
+}
