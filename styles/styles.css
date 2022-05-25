@@ -4,11 +4,28 @@
     --longBreakColor: rgb(69, 124, 163);
 }
 
+/* ****** Body Styles ****** */
+
 body {
     background-color: var(--pomodoroColor);
     max-width: 35rem;
     margin: 0 auto;
     font-family: 'Varela Round', 'Roboto', sans-serif;
+}
+
+.pomodoro {
+    background-color: var(--pomodoroColor);
+    transition: ease-in-out 0.5s
+}
+
+.short-break {
+    background-color: var(--shortBreakColor);
+    transition: ease-in-out 0.5s
+}
+
+.long-break {
+    background-color: var(--longBreakColor);
+    transition: ease-in-out 0.5s
 }
 
 /* ****** Header Styles ****** */
@@ -49,6 +66,10 @@ header a {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.header-btn:active {
+    transform: translateY(2px);
 }
 
 /* ****** Main Content ****** */
@@ -110,11 +131,7 @@ section {
 
 /* Start Button Styles */
 
-#button-div {
-    text-align: center;
-}
-
-#start-btn {
+.start-btn {
     font-family: inherit;
     font-size: 24px;
     font-weight: bold;
@@ -125,6 +142,16 @@ section {
     border-radius: 4px;
     padding: 16px 64px;
     box-shadow: 0px 6px 0px rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+.start-btn-active {
+    transform: translateY(6px);
+    box-shadow: none;
+}
+
+#button-div {
+    text-align: center;
 }
 
 /* Rounds Section */
