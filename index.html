@@ -34,7 +34,37 @@
     </header>
 
     <main>
-        <aside id="configurations"></aside>
+        <div id="backdrop" class="backdrop hidden"></div>
+        <aside id="configurations" class="configurations hidden">
+            <div id="container">
+                <div id="container-header">
+                    <h2>Timer Setting</h2>
+                    <h2 id="exit-btn">X</h2>
+                </div>
+                <div id="time-setting">
+                    <h3>Time (in minutes)</h3>
+                    <form>
+                        <ul>
+                            <li class="setting-list">
+                                <label>Short Break</label>
+                                <input type="number" id="pomodoro-input" value="25">
+                            </li>
+                            <li class="setting-list">
+                                <label>Short Break</label>
+                                <input type="number" id="short-break-input" value="5">
+                            </li>
+                            <li class="setting-list">
+                                <label>Long Break</label>
+                                <input type="number" id="long-break-input" value="15">
+                            </li>
+                        </ul>
+                        <div id="form-button-div">
+                            <button id="submit-btn" type="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
         <section>
             <article id="pomodoro-article">
                 <div id="options">

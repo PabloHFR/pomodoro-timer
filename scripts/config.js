@@ -2,6 +2,7 @@
 
 let isButtonClicked = false;
 
+// Change Style Functions
 function pomodoro() {
     // Start Button
     startButtonElement.classList.remove("start-btn-active");
@@ -67,4 +68,10 @@ function startButton() {
         startButtonElement.textContent = "Start";
         isButtonClicked = false;
     }
+}
+
+// Show Settings Function
+function showSettings () {
+    configurationOverlayElement.classList.toggle("hidden");
+    backdropElement.classList.toggle("hidden");
 }
