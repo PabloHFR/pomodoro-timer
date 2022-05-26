@@ -121,6 +121,7 @@ function timer() { // Convert, display and reset time when it reaches 00:00
         clearInterval(isTurnedOn);
         startButton();
         getVal();
+        alarmAudioElement.play();
     }
 };
 

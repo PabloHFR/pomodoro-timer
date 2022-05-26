@@ -28,3 +28,6 @@ const submitButtonElement = document.getElementById("submit-btn");
 
 // Rounds Article Elements
 const messageElement = document.getElementById("message");
+
+// Audio Element
+const alarmAudioElement = document.getElementById("audio");
