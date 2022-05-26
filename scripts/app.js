@@ -9,6 +9,14 @@ const pomodoroButtonElement = document.getElementById("pomodoro-btn");
 const shortBreakButtonElement = document.getElementById("short-break-btn");
 const longBreakButtonElement = document.getElementById("long-break-btn");
 
+// Pomodoro Inputs Elements
+const pomodoroTimeInputElement = document.getElementById("pomodoro-input");
+const shortBreakTimeInputElement = document.getElementById("short-break-input");
+const longBreakTimeInputElement = document.getElementById("long-break-input");
+
+// Time Element
+const timeElement = document.getElementById("time");
+
 // Pomodoro Start Button
 const startButtonElement = document.getElementById("start-btn");
 
